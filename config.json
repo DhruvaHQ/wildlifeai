@@ -1,0 +1,5 @@
+{
+    "image_folder": "test_images",
+    "json_output": "image_metadata.json",
+    "csv_output": "image_metadata.csv"
+}

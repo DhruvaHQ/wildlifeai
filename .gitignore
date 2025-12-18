@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+
+# Poetry
+.venv/
+poetry.lock
+
+# Logs
+*.log
+
+# Outputs
+image_metadata.json
+image_metadata.csv
+out.json
+out.csv
+
+# OS
+.DS_Store
+Thumbs.db
