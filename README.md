@@ -5,6 +5,17 @@ WildlifeAI is an open-source, research-oriented Python framework for transformin
 
 The project focuses on **pipeline design, reproducibility, and extensibility**, rather than one-off scripts or model demos.
 
+Design Philosophy
+
+WildlifeAI is intentionally designed as infrastructure, not an end-user application or GUI.
+The framework prioritizes reproducibility, extensibility, and research-oriented software design.
+
+Future Work
+
+Integration of CNN-based species classification models
+Evaluation on real-world camera-trap datasets
+Dataset versioning and experiment tracking
+
 
 
 ## Motivation
@@ -44,16 +55,7 @@ poetry install
 poetry run wildlifeai process test_images
 poetry run wildlifeai process --config config.json
 
-Design Philosophy
 
-WildlifeAI is intentionally designed as infrastructure, not an end-user application or GUI.
-The framework prioritizes reproducibility, extensibility, and research-oriented software design.
-
-Future Work
-
-Integration of CNN-based species classification models
-Evaluation on real-world camera-trap datasets
-Dataset versioning and experiment tracking
 
 
 
