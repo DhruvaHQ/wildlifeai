@@ -119,7 +119,7 @@ poetry run wildlifeai process my_images --json results.json --csv results.csv
 
 Tabular format compatible with Excel, pandas, and other data analysis tools.
 
-## 🔮 Future ML Integration
+## Future ML Integration
 
 The `SpeciesClassifier` in `models.py` provides a clean interface for integrating your own models:
 
@@ -136,7 +136,7 @@ class MyCustomClassifier(SpeciesClassifier):
         return {"species_name": confidence}
 ```
 
-## 🛠️ Development
+##  Development
 
 ### Running Tests
 
@@ -170,7 +170,7 @@ poetry run black src/
 poetry run flake8 src/
 ```
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -180,11 +180,11 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
+##  License
 
 This project is open source and available under the MIT License.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 Built for wildlife researchers, conservationists, and AI practitioners working on camera trap analysis.
 
