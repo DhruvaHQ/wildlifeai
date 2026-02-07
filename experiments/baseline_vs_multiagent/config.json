@@ -1,0 +1,57 @@
+{
+  "experiment_name": "baseline_vs_multiagent",
+  "description": "Compare simple detection pipeline to multi-agent cognitive system",
+  
+  "baseline_config": {
+    "pipeline": "detection_only",
+    "model": "resnet50",
+    "confidence_threshold": 0.7,
+    "output_format": "json"
+  },
+  
+  "multiagent_config": {
+    "pipeline": "cognitive_system",
+    "model": "resnet50",
+    "agents": {
+      "vision": {
+        "confidence_threshold": 0.7
+      },
+      "insight": {
+        "analysis_window_days": 7,
+        "anomaly_threshold": 1.5
+      },
+      "memory": {
+        "baseline_window_days": 7,
+        "storage_path": "data/memory"
+      },
+      "reporter": {
+        "output_dir": "experiments/baseline_vs_multiagent/results/reports"
+      }
+    }
+  },
+  
+  "evaluation": {
+    "metrics": [
+      "pattern_detection_f1",
+      "anomaly_detection_precision",
+      "anomaly_detection_recall",
+      "insight_diversity",
+      "species_coverage",
+      "processing_time"
+    ],
+    "validation_method": "synthetic_with_ground_truth"
+  },
+  
+  "dataset": {
+    "type": "synthetic",
+    "num_observations": 100,
+    "species": ["tiger", "elephant", "deer", "leopard"],
+    "patterns": {
+      "tiger": "nocturnal",
+      "deer": "diurnal"
+    },
+    "anomalies": [
+      {"species": "elephant", "type": "activity_spike", "day": 5}
+    ]
+  }
+}
