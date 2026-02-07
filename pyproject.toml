@@ -11,12 +11,30 @@ dependencies = [
     "pillow (>=12.0.0,<13.0.0)"
 ]
 
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+]
+
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 packages = [{ include = "wildlifeai", from = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+pillow = ">=12.0.0,<13.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=7.4.0"
+pytest-cov = ">=4.1.0"
+black = ">=23.0.0"
+flake8 = ">=6.0.0"
 
 [tool.poetry.scripts]
 wildlifeai = "wildlifeai.cli:main"

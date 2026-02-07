@@ -4,7 +4,6 @@ __pycache__/
 
 # Poetry
 .venv/
-poetry.lock
 
 # Logs
 *.log
@@ -15,6 +14,18 @@ image_metadata.csv
 out.json
 out.csv
 
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+
 # OS
 .DS_Store
 Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
