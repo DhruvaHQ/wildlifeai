@@ -1,5 +1,12 @@
 \# 🦁 WildlifeAI
 
+[![Tests](https://github.com/DhruvaHQ/wildlifeai/actions/workflows/tests.yml/badge.svg)](https://github.com/DhruvaHQ/wildlifeai/actions/workflows/tests.yml)
+[![codecov](https://codecov.io/gh/DhruvaHQ/wildlifeai/branch/main/graph/badge.svg)](https://codecov.io/gh/DhruvaHQ/wildlifeai)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
 **WildlifeAI** is an open-source Python framework that turns raw camera trap images into structured wildlife intelligence using a configurable, end-to-end AI pipeline.
 
 ## 💡 Motivation
@@ -133,8 +140,24 @@ class MyCustomClassifier(SpeciesClassifier):
 
 ### Running Tests
 
+Run all tests:
 ```bash
 poetry run pytest
+```
+
+Run with coverage report:
+```bash
+poetry run pytest --cov=src/wildlifeai --cov-report=html
+```
+
+View coverage in browser:
+```bash
+# Open htmlcov/index.html in your browser
+```
+
+Run specific test file:
+```bash
+poetry run pytest tests/test_utils.py -v
 ```
 
 ### Code Quality
