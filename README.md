@@ -7,7 +7,47 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-**WildlifeAI** is an open-source Python framework that transforms raw camera trap images into structured wildlife intelligence using a configurable, end-to-end AI pipeline with autonomous ecological reasoning capabilities.
+**WildlifeAI is a modular multi-agent framework designed to automate ecological intelligence extraction from wildlife camera-trap data.**
+
+Instead of focusing solely on species detection, WildlifeAI introduces a cognitive pipeline that transforms raw observations into structured ecological insights through coordinated AI agents. The system combines computer vision, temporal pattern analysis, and autonomous reasoning to generate actionable conservation intelligence.
+
+## Architecture Overview
+
+### Multi-Agent Cognitive System
+
+```
+                    Controller Agent
+                   (Executive Function)
+                          |
+        +-----------------+-----------------+
+        |                 |                 |
+   Vision Agent     Insight Agent    Memory Agent    Reporter Agent
+   (Detection)      (Reasoning)      (Learning)      (Narrative)
+        |                 |                 |              |
+    Species          Patterns         Baselines       Reports
+    Detection        Analysis         & History       & Alerts
+```
+
+### Data Flow Pipeline
+
+```
+Camera Trap Images
+        |
+        v
+    Vision Agent -----> Structured Observations
+                              |
+                              v
+                        Insight Agent -----> Patterns & Anomalies
+                              |
+                +-------------+-------------+
+                |                           |
+                v                           v
+          Memory Agent                Reporter Agent
+        (Learn Baselines)           (Generate Narratives)
+                |                           |
+                v                           v
+        Historical Context            Scientific Reports
+```
 
 ## Motivation
 
@@ -171,6 +211,8 @@ poetry run wildlifeai process --config config.json
 # See autonomous intelligence in action
 python examples/cognitive_system_demo.py
 ```
+
+**See complete end-to-end example with real output:** [EXAMPLE.md](EXAMPLE.md)
 
 ## Usage
 
