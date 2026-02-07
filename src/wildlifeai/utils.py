@@ -54,7 +54,7 @@ def extract_exif(img: Image.Image) -> Dict[str, Any]:
                 if isinstance(value, bytes):
                     try:
                         value = value.decode('utf-8', errors='ignore')
-                    except:
+                    except (UnicodeDecodeError, AttributeError):
                         value = str(value)
                 exif_data[tag] = value
     except AttributeError:
