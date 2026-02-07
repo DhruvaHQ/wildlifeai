@@ -23,6 +23,26 @@ Many wildlife AI efforts struggle not due to model performance, but due to the l
 - 🤖 **Model-agnostic ML interface** for future species classification
 - 📊 **Multiple output formats** (JSON and CSV)
 
+## 🆕 **NEW: Deep Learning Support!**
+
+WildlifeAI now includes production-ready **PyTorch-based species classification**:
+
+- ✅ **ResNet50 & EfficientNet** models with transfer learning
+- ✅ **GPU acceleration** for fast inference
+- ✅ **Batch processing** for efficiency
+- ✅ **Training utilities** for custom models
+- ✅ **Pre-trained weights** ready to use
+
+```python
+from wildlifeai.models import SpeciesClassifier
+
+classifier = SpeciesClassifier(model_path="models/wildlife_model.pth")
+result = classifier.predict("camera_trap_image.jpg")
+# {"deer": 0.92, "elk": 0.05, "moose": 0.03}
+```
+
+**→ See [ML_GUIDE.md](ML_GUIDE.md) for complete documentation**
+
 ## 📁 Project Structure
 
 ```

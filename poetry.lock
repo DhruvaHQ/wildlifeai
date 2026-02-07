@@ -648,4 +648,4 @@ dev = ["black", "flake8", "pytest", "pytest-cov"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10"
-content-hash = "5f6c664da8c1f70cfe434c622d02796f6731659c883a63882e2f2e2704461d41"
+content-hash = "872a1d6db974e160263238c994f7f39c32d91f6fe68957a95eb7339ca42780bf"

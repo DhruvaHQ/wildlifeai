@@ -29,3 +29,24 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
+
+# ML/Data
+data/
+!data/.gitkeep
+models/*.pth
+models/*.pt
+models/*.onnx
+!models/.gitkeep
+*.h5
+*.pkl
+*.pickle
+
+# Training artifacts
+runs/
+checkpoints/
+*.tensorboard
+training_history.json
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
