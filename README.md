@@ -9,6 +9,8 @@
 
 A modular multi-agent framework for automated ecological intelligence extraction from wildlife camera-trap data.
 
+https://wildlifeairealoutput.netlify.app/
+
 ## Installation
 
 ### Using Poetry (Recommended)
